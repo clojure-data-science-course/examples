@@ -1,6 +1,8 @@
 # examples
 
-Examples notebooks for the clojure data science course.
+Examples notebooks for the [clojure data science course](https://clojure-data-science-course.github.io/).
+
+More will come soon - stay tuned!
 
 ## Usage
 
