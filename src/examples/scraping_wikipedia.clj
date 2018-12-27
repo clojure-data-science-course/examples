@@ -3,6 +3,8 @@
 ;; **
 ;;; # Example: Scraping Wikipedia
 ;;; 
+;;; This tutorial is part of the [clojure data science course](https://clojure-data-science-course.github.io/). See more examples [here](https://github.com/clojure-data-science-course/examples).
+;;; 
 ;;; In this example we show some typical data processing workflow in clojure.
 ;;; 
 ;;; It is a Gorilla REPL notebook. Shift + enter evaluates code. Hit alt+g twice in quick succession or click the menu icon (upper-right corner) for more commands ...
@@ -12,7 +14,7 @@
 ;; **
 
 ;; @@
-(ns examples.scraping-wikipedia)
+ (ns examples.scraping-wikipedia)
 ;; @@
 ;; =>
 ;;; {"type":"html","content":"<span class='clj-nil'>nil</span>","value":"nil"}
@@ -27,7 +29,7 @@
 ;;; The function `distill` of the `alembic` package helps us make sure the libraries are available: it brings them from the central web repositories, and lets this running program know that they are there.
 ;;; The function `require` makes specific namespaces available in the current namespace.
 ;;; 
-;;;  
+;;; 
 ;; **
 
 ;; @@
@@ -107,7 +109,7 @@
 (require '[pl.danieljanus.tagsoup :as tagsoup])
 ;; @@
 ;; ->
-;;; WARN: org.clojure/clojure version 1.10.0-RC5 requested, but 1.8.0 already on classpath.
+;;; WARN: org.clojure/clojure version 1.10.0 requested, but 1.8.0 already on classpath.
 ;;; Loaded dependencies:
 ;;; [[clj-tagsoup &quot;0.3.0&quot;]
 ;;;  [net.java.dev.stax-utils/stax-utils &quot;20040917&quot;]
@@ -116,7 +118,28 @@
 ;;;  [org.clojure/data.xml &quot;0.0.3&quot;]
 ;;;  [org.clojure/spec.alpha &quot;0.2.176&quot;]]
 ;;; Dependencies not loaded due to conflict with previous jars :
-;;; [[org.clojure/clojure &quot;1.10.0-RC5&quot;]]
+;;; [[org.clojure/clojure &quot;1.10.0&quot;]]
+;;; 
+;; <-
+;; =>
+;;; {"type":"html","content":"<span class='clj-nil'>nil</span>","value":"nil"}
+;; <=
+
+;; @@
+(distill '[clj-tagsoup "0.3.0"])
+(require '[pl.danieljanus.tagsoup :as tagsoup])
+;; @@
+;; ->
+;;; WARN: org.clojure/clojure version 1.10.0 requested, but 1.8.0 already on classpath.
+;;; Loaded dependencies:
+;;; [[clj-tagsoup &quot;0.3.0&quot;]
+;;;  [net.java.dev.stax-utils/stax-utils &quot;20040917&quot;]
+;;;  [org.clojars.nathell/tagsoup &quot;1.2.1&quot;]
+;;;  [org.clojure/core.specs.alpha &quot;0.2.44&quot;]
+;;;  [org.clojure/data.xml &quot;0.0.3&quot;]
+;;;  [org.clojure/spec.alpha &quot;0.2.176&quot;]]
+;;; Dependencies not loaded due to conflict with previous jars :
+;;; [[org.clojure/clojure &quot;1.10.0&quot;]]
 ;;; 
 ;; <-
 ;; =>
@@ -391,7 +414,7 @@
 ;; **
 
 ;; @@
-(begins-with? #{:A :B} [:C :A]) 
+(begins-with? #{:A :B} [:C :A])
 ;; @@
 ;; =>
 ;;; {"type":"html","content":"<span class='clj-nil'>nil</span>","value":"nil"}
@@ -554,10 +577,10 @@
      (transform [ALL] #(drop 2 %))
      (transform [ALL ALL] last)
      (transform [ALL ALL]
-                (fn [v] (cond (vector? v) (last v) 
+                (fn [v] (cond (vector? v) (last v)
                               (string? v) (string/replace v #"\n" ""))))
      (transform [ALL ALL]
-                (fn [v] (cond (vector? v) (last v) 
+                (fn [v] (cond (vector? v) (last v)
                               (string? v) v)))
      (filter (fn [v] (-> v first)))
      butlast
@@ -630,10 +653,10 @@
      (transform [ALL] #(drop 2 %))
      (transform [ALL ALL] last)
      (transform [ALL ALL]
-                (fn [v] (cond (vector? v) (last v) 
+                (fn [v] (cond (vector? v) (last v)
                               (string? v) (string/replace v #"\n" ""))))
      (transform [ALL ALL]
-                (fn [v] (cond (vector? v) (last v) 
+                (fn [v] (cond (vector? v) (last v)
                               (string? v) v)))
      (filter (fn [v] (-> v first)))
      butlast))
@@ -727,7 +750,7 @@ column-names
                         (->> numbers (map #(Double/parseDouble %))))))
          (map (fn [row]
                   (zipmap column-names row)))))
-    
+
 (->> all-countries
      (take 3)
      pprint)
@@ -863,7 +886,3 @@ column-names
 ;;; 
 ;;; Note how we composed several plots in a simple manner. If you find this interesting, look in to Jony Hudson's [videos](http://gorilla-repl.org/videos.html) about Gorilla REPL.
 ;; **
-
-;; @@
-
-;; @@
