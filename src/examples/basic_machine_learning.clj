@@ -5,12 +5,15 @@
 ;;; 
 ;;; This tutorial is part of the [clojure data science course](https://clojure-data-science-course.github.io/). See more examples [here](https://github.com/clojure-data-science-course/examples).
 ;;; 
+;;; It is a Gorilla REPL notebook. Shift + enter evaluates code. Hit alt+g twice in quick succession or click the menu icon (upper-right corner) for more commands ...
+;;; 
 ;;; In this worksheet we give some basic example of a machine learning workflow in Clojure, using the Java library [Smile](https://haifengl.github.io/smile/). It is based on the [second meeting](https://clojure-data-science-course.github.io/posts-output/2018-12-11-towards-the-second-meeting/) of the course, with some changes for the sake of presentation.
 ;;; 
 ;;; **Remarks.** 
 ;;; - In this tutorial, we try to keep things rather basic, and knowinglny neglect some important aspects such as reproducibility, extensibility, reusability, etc.
 ;;; - We do not not use [type hints](https://clojure.org/reference/java_interop#typehints) here, since we wanted to keep the code easier to read. If you intend to work with Java a lot, you may wish to learn about them - they are important for performance when calling java methods many times (which was not the case here).
 ;;; - To keep things as simple and easy as possible, we dealt only with numerical variables here. 
+;;; - We are working on a general clojure library that wraps some JVM machine learning libraries like Smile.
 ;;; - Stay tuned for more complicated examples soon!
 ;;; 
 ;;; 🌺 Special thanks to Michael Feinstein, Ella Bekerman-Vizel, Alon Vizel and Alik Peltinovich, who helped to make these notes a little better. 🌺
