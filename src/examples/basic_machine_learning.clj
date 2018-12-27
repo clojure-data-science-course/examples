@@ -7,7 +7,7 @@
 ;;; 
 ;;; It is a Gorilla REPL notebook. Shift + enter evaluates code. Hit alt+g twice in quick succession or click the menu icon (upper-right corner) for more commands ...
 ;;; 
-;;; In this worksheet we give some basic example of a machine learning workflow in Clojure, using the Java library [Smile](https://haifengl.github.io/smile/). It is based on the [second meeting](https://clojure-data-science-course.github.io/posts-output/2018-12-11-towards-the-second-meeting/) of the course, with some changes for the sake of presentation.
+;;; In this worksheet we give some basic example of a machine learning workflow in Clojure, using the Java library [Smile](https://haifengl.github.io/smile/). It is based on the [second meeting](https://clojure-data-science-course.github.io/posts-output/2018-12-27-notes-from-the-second-meeting/) of the course, with some changes for the sake of presentation.
 ;;; 
 ;;; **Remarks.** 
 ;;; - In this tutorial, we try to keep things rather basic, and knowinglny neglect some important aspects such as reproducibility, extensibility, reusability, etc.
