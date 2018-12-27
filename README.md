@@ -15,6 +15,9 @@ You can also view the notebooks online, using [Gorilla-REPL's online viewer](htt
 
 * [Scraping Wikipedia](http://viewer.gorilla-repl.org/view.html?source=github&user=clojure-data-science-course&repo=examples&path=src/examples/scraping_wikipedia.clj)
 
+* [Basic Machine Learning](http://viewer.gorilla-repl.org/view.html?source=github&user=clojure-data-science-course&repo=examples&path=src/examples/basic_machine_learning.clj)
+
+
 ## License
 
 Distributed under the Eclipse Public License either version 1.0 or (at
