@@ -17,6 +17,9 @@ You can also view the notebooks online, using [Gorilla-REPL's online viewer](htt
 
 * [Basic Machine Learning](http://viewer.gorilla-repl.org/view.html?source=github&user=clojure-data-science-course&repo=examples&path=src/examples/basic_machine_learning.clj)
 
+* R interop
+  * [Renjin example](http://viewer.gorilla-repl.org/view.html?source=github&user=clojure-data-science-course&repo=examples&path=src/examples/renjin.clj)
+
 
 ## License
 
