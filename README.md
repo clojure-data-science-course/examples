@@ -18,7 +18,9 @@ You can also view the notebooks online, using [Gorilla-REPL's online viewer](htt
 * [Basic Machine Learning](http://viewer.gorilla-repl.org/view.html?source=github&user=clojure-data-science-course&repo=examples&path=src/examples/basic_machine_learning.clj)
 
 * R interop
-  * [Renjin example](http://viewer.gorilla-repl.org/view.html?source=github&user=clojure-data-science-course&repo=examples&path=src/examples/renjin.clj)
+  * [Using pure-JVM R from Clojure through Renjin](http://viewer.gorilla-repl.org/view.html?source=github&user=clojure-data-science-course&repo=examples&path=src/examples/renjin.clj)
+  * [Creating visual reports by mixing Clojure Hiccup with Rmarkdonwn](http://viewer.gorilla-repl.org/view.html?source=github&user=clojure-data-science-course&repo=examples&path=src/examples/rmarkdown.clj)
+  * [Calling R from Clojurescript](https://www.maria.cloud/gist/6a0b78b82f52f5b1bff64053a00660dd)
 
 
 ## License
